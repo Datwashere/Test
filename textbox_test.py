@@ -34,7 +34,7 @@ class MainWindow(QWidget):
         self.txt.old_func = self.txt.keyPressEvent
         self.txt.keyPressEvent = self.new_keyPressEvent
         self.txt.setPlaceholderText('Write pandas query here \n(Press \'Enter\' key to submit)')
-        self.txt.resize(400, 200)
+        #self.txt.setFixedSize(100,100)
 
         left_layout.addWidget(self.txt)
         layout.addLayout(left_layout)
